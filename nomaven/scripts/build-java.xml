@@ -48,6 +48,7 @@
                  destdir="${classesDir}/core"
                  debug="on"
                  source="1.7"
+                 includeantruntime="false"
         />
     </target>
 	<target name="buildToolClasses" depends="cleanToolClasses, createOutputDir">
@@ -56,6 +57,7 @@
                  destdir="${classesDir}/tool"
                  debug="on"
                  source="1.7"
+                 includeantruntime="false"
         />
     </target>
 	<target name="buildExtClasses" depends="cleanExtClasses, createOutputDir">
@@ -64,6 +66,7 @@
                  destdir="${classesDir}/ext"
                  debug="on"
                  source="1.7"
+                 includeantruntime="false"
         />
     </target>
 	<target name="buildAllClasses" depends="cleanAllClasses, buildCoreClasses, buildToolClasses, buildExtClasses">
