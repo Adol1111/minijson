@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.minijson</groupId>
+  <groupId>org.aerysoft.minijson</groupId>
   <artifactId>minijson</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -19,6 +19,22 @@
       <comments>A no-strings-attached open source license.</comments>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <id>harry</id>
+      <name>Harry Y</name>
+      <email>harrywye@gmail.com</email>
+      <url>http://www.harrywye.com/</url>
+      <organization>Aery Software</organization>
+      <organizationUrl>http://www.aerysoft.com/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>-7</timezone>
+    </developer>
+  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
