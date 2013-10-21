@@ -151,8 +151,14 @@
 	        <bottom><![CDATA[<i>Copyright &#169; 2013 Harry Y. All Rights Reserved.</i>]]></bottom>
 	    </javadoc>
 	</target>
+	<target name="createApiDocJar" depends="apidoc">
+        <jar destfile="${output}/minijson-all-${version}-javadoc.jar"
+             basedir="${apidocDir}"
+             includes="**"
+        />
+    </target>
 
     <target name="clean" depends="cleanAllClasses, createAllClassesDir, cleanApidocDir" />
 
-    <target name="all" depends="exportAllJars, apidoc" />
+    <target name="all" depends="exportAllJars, createApiDocJar" />
 </project>
