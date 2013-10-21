@@ -1,0 +1,11 @@
+org.minijson
+org.minijson.base
+org.minijson.builder.impl
+org.minijson.builder.partial.impl
+org.minijson.common
+org.minijson.mini
+org.minijson.parser.core
+org.minijson.parser.impl
+org.minijson.parser.partial.impl
+org.minijson.parser.policy.base
+org.minijson.util
