@@ -4,7 +4,7 @@
 
   <groupId>org.aerysoft.minijson</groupId>
   <artifactId>minijson</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>MiniJSON</name>
@@ -50,7 +50,7 @@
     <connection>scm:git:ssh://github.com/harrywye/minijson.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/harrywye/minijson.git</developerConnection>
     <url>https://github.com/harrywye/minijson</url>
-    <tag>v0.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
