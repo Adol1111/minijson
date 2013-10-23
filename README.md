@@ -36,7 +36,12 @@ High Level API Design
 API
 ---
 
-Please refer to [the Project wiki pages](https://github.com/harrywye/minijson/wiki/_pages) or [the online API Docs](http://www.minijson.org/repo/apidocs/).
+Please refer to [the online API Docs](http://www.minijson.org/repo/apidocs/).
+
+<!--
+Please refer to [the Project wiki pages](https://github.com/harrywye/minijson/wiki/_pages) 
+or [the online API Docs](http://www.minijson.org/repo/apidocs/).
+-->
 
 
 
