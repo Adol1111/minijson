@@ -1,7 +1,7 @@
-minijson
+MiniJSON
 ========
 
-_MiniJSON - A minimal JSON parser/generator in Java._
+_A minimal JSON builder - parser in Java._
 
 
 What is it?
