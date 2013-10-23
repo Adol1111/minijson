@@ -5,8 +5,9 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 
-
-// "Special" chars for tokenizer.
+/**
+ * "Special" chars for tokenizer.
+ */
 public final class Symbols
 {
     private static final Logger log = Logger.getLogger(Symbols.class.getName());

@@ -1,7 +1,9 @@
 package org.minijson.common;
 
 
-// Predefined string literals.
+/**
+ * Predefined JSON string literals.
+ */
 public final class Literals
 {
     private Literals() {}

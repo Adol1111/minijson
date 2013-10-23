@@ -1,7 +1,9 @@
 package org.minijson.parser;
 
 
-// For tracing/debugging purposes...
+/**
+ * JsonTokenizer with tracing/debugging information.
+ */
 public interface TraceableJsonTokenizer extends JsonTokenizer
 {    
     /**

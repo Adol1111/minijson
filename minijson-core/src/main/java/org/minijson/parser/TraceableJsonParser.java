@@ -3,7 +3,9 @@ package org.minijson.parser;
 import org.minijson.parser.core.JsonToken;
 
 
-// For tracing/debugging purposes...
+/**
+ * JsonParser with tracing/debugging information.
+ */
 public interface TraceableJsonParser extends JsonParser
 {    
     /**

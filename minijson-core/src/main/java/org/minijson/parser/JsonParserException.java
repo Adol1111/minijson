@@ -4,7 +4,9 @@ import org.minijson.JsonException;
 import org.minijson.parser.core.ErrorContext;
 
 
-// Base class for all parser/lexer exceptions.
+/**
+ * Base class for all parser/lexer related exceptions.
+ */
 public class JsonParserException extends JsonException
 {
     private static final long serialVersionUID = 1L;

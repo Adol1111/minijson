@@ -7,5 +7,6 @@
 /**
  * MiniJSON JSON builder/generator top-level package.
  * It defines various JSON builder related interfaces.
+ * ("Building" refers to generating a JSON string.)
  */
 package org.minijson.builder;

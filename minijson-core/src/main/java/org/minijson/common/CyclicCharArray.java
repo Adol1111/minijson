@@ -4,10 +4,12 @@ import java.util.Arrays;
 import java.util.logging.Logger;
 
 
-// The purpose of this class is to implement "subarray" operation 
-//        that does not require the content copy (which requires new memory allocation).
-// Use CharArrayWrapper for "linear" or regular arrays.
-// This class is for wrapping "cyclic" arrays like CharQueue (ring buffer). 
+/**
+ * The purpose of this class is to implement "subarray" operation 
+ *        that does not require the content copy (which requires new memory allocation).
+ * Use CharArrayWrapper for "linear" or regular arrays.
+ * This class is for wrapping "cyclic" arrays like CharQueue (ring buffer). 
+ */
 public final class CyclicCharArray
 {
     private static final Logger log = Logger.getLogger(CyclicCharArray.class.getName());

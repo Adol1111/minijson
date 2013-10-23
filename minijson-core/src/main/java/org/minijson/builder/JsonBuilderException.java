@@ -3,6 +3,9 @@ package org.minijson.builder;
 import org.minijson.JsonException;
 
 
+/**
+ * Base exception for all "builder"-related exceptions.
+ */
 public class JsonBuilderException extends JsonException
 {
     private static final long serialVersionUID = 1L;

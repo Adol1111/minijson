@@ -1,14 +1,16 @@
 package org.minijson.builder.core;
 
 
+/**
+ * Note that in order to make the public API simpler,
+ *   we overload the "indent:int" variable for at least two purposes.
+ * If indent == -1, then compact - no line breaks
+ * If indent == 0, no compact - no line break
+ * If indent > 0, no compact - line breaks - indentation: indent.
+ * ("compact" means no spaces between JSON tokens.)
+ */
 public class IndentInfoStruct
 {
-    // Note that in order to make the public API simpler,
-    //   we overload the "indent:int" variable for at least two purposes.
-    // If indent == -1, then compact - no line breaks
-    // If indent == 0, no compact - no line break
-    // If indent > 0, no compact - line breaks -indentation: indent.
-
     private final boolean includingWhiteSpaces;
     private final boolean includingLineBreaks;
     private final boolean lineBreakingAfterComma;
