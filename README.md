@@ -1,4 +1,4 @@
-MiniJSON
+MiniJSON for Java
 ========
 
 _A minimal JSON builder - parser in Java._
