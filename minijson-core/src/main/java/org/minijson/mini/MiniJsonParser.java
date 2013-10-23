@@ -15,6 +15,9 @@ import org.minijson.parser.impl.SimpleJsonParser;
 
 
 /**
+ * JsonParser wrapper.
+ * The primary purpose of this class is to "minimize" the interface of the real implementation.
+ * 
  * Usage:
  * <pre>
  * {@Code

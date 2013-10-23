@@ -12,6 +12,9 @@ import org.minijson.parser.partial.impl.SimpleLayeredJsonParser;
 
 
 /**
+ * LayeredJsonParser wrapper.
+ * The primary purpose of this class is to "minimize" the interface of the real implementation.
+ * 
  * Usage:
  * <pre>
  * {@Code
