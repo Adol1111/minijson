@@ -1,7 +1,9 @@
 package org.minijson;
 
 
-// Base class of all MiniJson exceptions.
+/**
+ * Base class of all MiniJson exceptions.
+ */
 public class JsonException extends Exception 
 {
     private static final long serialVersionUID = 1L;

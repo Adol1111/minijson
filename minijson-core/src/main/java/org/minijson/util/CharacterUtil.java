@@ -1,12 +1,20 @@
 package org.minijson.util;
 
 
+/**
+ * Character-related utility functions.
+ */
 public final class CharacterUtil
 {
     private CharacterUtil() {}
 
-    
-    // Note: http://en.wikipedia.org/wiki/Whitespace_character
+
+    /**
+     * Returns true if the char is a "white space" char.
+     * (Note: http://en.wikipedia.org/wiki/Whitespace_character)
+     * @param ch
+     * @return whether it is a white space char 
+     */
     public static boolean isWhitespace(char ch)
     {
         // return Character.isWhitespace(ch);
@@ -21,7 +29,12 @@ public final class CharacterUtil
         }
         return false;        
     }
-    
+
+    /**
+     * Returns true if the char is a "control character".
+     * @param ch
+     * @return whether it is a control character.
+     */
     public static boolean isISOControl(char ch)
     {
         // return Character.isISOControl(ch);

@@ -13,6 +13,10 @@ package org.minijson;
 //    e.g., E e = (E implements JsonPareseable).fromJson(String jsonStr).
 // Since Java does not allow a static method in interface (that is, possibly, until Java8),
 // this is the best we can do...
+/**
+ * "Marker" interface.
+ * This is sort of the opposite of "JsonBuildable".
+ */
 public interface JsonParseable  // extends JsonCompatible
 {
     // This method does not really make sense.

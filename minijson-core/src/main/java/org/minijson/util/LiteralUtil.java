@@ -1,10 +1,7 @@
 package org.minijson.util;
 
-import static org.minijson.common.Literals.FALSE;
 import static org.minijson.common.Literals.FALSE_LENGTH;
-import static org.minijson.common.Literals.NULL;
 import static org.minijson.common.Literals.NULL_LENGTH;
-import static org.minijson.common.Literals.TRUE;
 import static org.minijson.common.Literals.TRUE_LENGTH;
 
 import java.util.logging.Logger;
@@ -12,6 +9,10 @@ import java.util.logging.Logger;
 import org.minijson.common.CyclicCharArray;
 
 
+/**
+ * Utility functions related to the "JSON literals".
+ * E.g., "null", "true", and "false". 
+ */
 public class LiteralUtil
 {
     private static final Logger log = Logger.getLogger(LiteralUtil.class.getName());

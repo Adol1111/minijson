@@ -2,7 +2,9 @@ package org.minijson;
 
 
 
-// TBD:
+/**
+ * Place-holder.
+ */
 public interface JsonTemplateable
 {
    String getJsonTemplate();

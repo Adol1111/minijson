@@ -3,7 +3,9 @@ package org.minijson;
 import org.minijson.builder.JsonBuilderException;
 
 
-// TBD:
+/**
+ * Place holder.
+ */
 public interface FastJsonSerializable extends JsonSerializable, JsonTemplateable
 {
     // String buildJsonUsingTemplate(Object ... args);

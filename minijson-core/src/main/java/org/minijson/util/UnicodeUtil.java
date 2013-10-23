@@ -3,6 +3,9 @@ package org.minijson.util;
 import org.minijson.common.CyclicCharArray;
 
 
+/**
+ * Unicode-related utility functions.
+ */
 public final class UnicodeUtil
 {
     private UnicodeUtil() {}
