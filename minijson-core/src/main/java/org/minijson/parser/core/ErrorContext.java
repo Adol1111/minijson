@@ -3,9 +3,11 @@ package org.minijson.parser.core;
 import java.io.Serializable;
 
 
-// Simple wrapper around a String. To be used as a member of ParserException.
-// (It's hard to overload exception constructor with a String arg.
-//    Use this class instead of String, if apropriate.)
+/**
+ * Simple wrapper around a String. To be used as a member of ParserException.
+ * (It's hard to overload exception constructor with a String arg.
+ *    Use this class instead of String, if apropriate.)
+ */
 public final class ErrorContext implements Serializable
 {
     private static final long serialVersionUID = 1L;

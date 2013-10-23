@@ -19,10 +19,12 @@ import org.minijson.common.Literals;
 import org.minijson.common.Symbols;
 
 
-// Note that this singleton can be shared across different/multiple parsing operations....
+/**
+ * Token "pool", to reduce the memory footprint while parsing a large JSON file.
+ * Note that this singleton can be shared across different/multiple parsing operations....
+ */
 // TBD:
 // Note that this can be a bit of problem when we have tokens with long string, etc.   ????
-// ...
 public final class TokenPool
 {
     private static final Logger log = Logger.getLogger(TokenPool.class.getName());

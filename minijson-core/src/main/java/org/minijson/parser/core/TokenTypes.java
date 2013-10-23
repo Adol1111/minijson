@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 
+/**
+ * Defines a token "type" 
+ * To be used by the tokenizer.
+ */
 public final class TokenTypes
 {
     private TokenTypes() {}

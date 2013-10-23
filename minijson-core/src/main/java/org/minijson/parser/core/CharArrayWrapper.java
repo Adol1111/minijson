@@ -7,8 +7,10 @@ package org.minijson.parser.core;
 // Use CyclicCharArray for cyclic arrays.
 // ...
 
-// The purpose of this class is to implement "subarray" operation 
-//        that does not require the content copy (which requires new memory allocation).
+/**
+ * The purpose of this class is to implement "subarray" operation 
+ *     that does not require the content copy (which requires new memory allocation).
+ */
 public final class CharArrayWrapper
 {
     // temporary.

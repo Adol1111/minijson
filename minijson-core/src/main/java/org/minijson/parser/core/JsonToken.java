@@ -1,7 +1,9 @@
 package org.minijson.parser.core;
 
 
-// JsonToken is immutable.
+/**
+ * JsonToken is immutable.
+ */
 public final class JsonToken
 {
     private final int type;

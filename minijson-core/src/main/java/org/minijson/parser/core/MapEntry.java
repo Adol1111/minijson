@@ -3,7 +3,11 @@ package org.minijson.parser.core;
 import java.util.Map;
 
 
-// "Pair" class.
+/**
+ * "Pair" class for Map.entry.
+ * @param <K>
+ * @param <V>
+ */
 public final class MapEntry<K, V> implements Map.Entry<K, V>
 {
     private final K key;

@@ -11,10 +11,12 @@ import java.util.Queue;
 // Not being used.
 // Use CharQueue instead...
 
-// The goal of using this class is to reduce the memory usage while reading the input stream.
-// However, due to the Java language limitation (see the comment below wrt convertToList()),
-// use of this "queue" can make parsing rather inefficient.
-// We need a "char queue" which manipulates char[] not Character collection....
+/**
+ * The goal of using this class is to reduce the memory usage while reading the input stream.
+ * However, due to the Java language limitation (see the comment below wrt convertToList()),
+ * use of this "queue" can make parsing rather inefficient.
+ * We need a "char queue" which manipulates char[] not Character collection....
+ */
 public class CharacterQueue implements Queue<Character>
 {
     // The actual implementation is delegated to LinkedList.
