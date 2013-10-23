@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.aerysoft.minijson</groupId>
     <artifactId>minijson</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>minijson-ext</artifactId>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>org.aerysoft.minijson</groupId>
       <artifactId>minijson-core</artifactId>
-      <version>0.1.1-SNAPSHOT</version>
+      <version>0.9.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

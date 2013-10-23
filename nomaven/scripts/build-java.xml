@@ -4,7 +4,7 @@
     <property name="classesDir" value="nomaven/build/classes"/>
     <property name="apidocDir" value="nomaven/build/apidoc"/>
     <property name="output" value="nomaven/build/jar"/>
-    <property name="version" value="0.1.0"/>
+    <property name="version" value="0.9.0"/>
 
 
 	<target name="cleanCoreClasses">
