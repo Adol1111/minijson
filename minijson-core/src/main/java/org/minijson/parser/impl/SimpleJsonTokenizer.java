@@ -7,7 +7,10 @@ import org.minijson.parser.TraceableJsonTokenizer;
 import org.minijson.parser.policy.ParserPolicy;
 
 
-// Default tokenizer for MiniJson.
+/**
+ * Simple JsonTokenizer implementation.
+ * It's a "default" tokenizer for MiniJson.
+ */
 public final class SimpleJsonTokenizer extends AbstractJsonTokenizer implements TraceableJsonTokenizer
 {
     private static final Logger log = Logger.getLogger(SimpleJsonTokenizer.class.getName());

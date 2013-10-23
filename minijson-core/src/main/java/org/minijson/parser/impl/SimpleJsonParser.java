@@ -7,6 +7,9 @@ import org.minijson.parser.policy.ParserPolicy;
 import org.minijson.type.factory.JsonTypeFactory;
 
 
+/** 
+ * Simple BareJsonParser implementation.
+ */
 public final class SimpleJsonParser extends AbstractBareJsonParser implements BareJsonParser
 {
     private static final Logger log = Logger.getLogger(SimpleJsonParser.class.getName());

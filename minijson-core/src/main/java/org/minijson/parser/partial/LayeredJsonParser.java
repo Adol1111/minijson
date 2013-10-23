@@ -8,11 +8,12 @@ import org.minijson.parser.JsonParser;
 import org.minijson.parser.JsonParserException;
 
 
-// TBD:
-// LayeredJsonParser is a "partial" json parser.
-// While parsing a json string, if it reaches the specified depth,
-//     rather than continuing to parse the child elements/nodes,
-//     it just returns the partial json string representing the node. 
+/**
+ * LayeredJsonParser is a "partial" json parser.
+ * While parsing a json string, if it reaches the specified depth,
+ *     rather than continuing to parse the child elements/nodes,
+ *     it just returns the partial json string representing the node. 
+ */
 public interface LayeredJsonParser extends JsonParser
 {
     // TBD:

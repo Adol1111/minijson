@@ -6,6 +6,9 @@ import org.minijson.builder.partial.MixedJsonBuilder;
 import org.minijson.builder.policy.BuilderPolicy;
 
 
+/**
+ * Simple MixedJsonBuilder wrapper.
+ */
 public final class SimpleMixedJsonBuilder extends AbstractMixedJsonBuilder implements MixedJsonBuilder
 {
     private static final Logger log = Logger.getLogger(SimpleMixedJsonBuilder.class.getName());

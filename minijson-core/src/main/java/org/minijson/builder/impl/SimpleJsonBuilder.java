@@ -5,6 +5,9 @@ import org.minijson.builder.BareJsonBuilder;
 import org.minijson.builder.policy.BuilderPolicy;
 
 
+/**
+ * Simple BareJsonBuilder implementation.
+ */
 public final class SimpleJsonBuilder extends AbstractBareJsonBuilder implements BareJsonBuilder
 {
     private static final Logger log = Logger.getLogger(SimpleJsonBuilder.class.getName());

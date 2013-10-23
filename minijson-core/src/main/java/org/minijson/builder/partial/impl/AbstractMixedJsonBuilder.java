@@ -36,9 +36,12 @@ import org.minijson.util.CharacterUtil;
 import org.minijson.util.UnicodeUtil;
 
 
-// Any string at the depth level ??? Or any string at or below the depth level  ????
-//      is interpreted as JSON string (representing a sub-tree)
-//      rather than a string.
+/**
+ * Default MixedJsonBuilder implementation.
+ * Any string at the depth level (Or, any string at or below the depth level  ????)
+ *      is interpreted as JSON string (representing a sub-tree)
+ *      rather than a string.
+ */
 public abstract class AbstractMixedJsonBuilder implements MixedJsonBuilder
 {
     private static final Logger log = Logger.getLogger(AbstractMixedJsonBuilder.class.getName());

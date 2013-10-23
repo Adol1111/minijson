@@ -6,6 +6,7 @@ import java.io.Writer;
 
 /**
  * JsonBuilder with "indent" options.
+ * See the comment for the class, IndentInfoStruct.
  */
 public interface IndentedJsonBuilder extends JsonBuilder
 {

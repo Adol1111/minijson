@@ -7,6 +7,9 @@ import org.minijson.parser.policy.ParserPolicy;
 import org.minijson.type.factory.JsonTypeFactory;
 
 
+/**
+ * Simple LayeredJsonParser wrapper.
+ */
 public final class SimpleLayeredJsonParser extends AbstractLayeredJsonParser implements LayeredJsonParser
 {
     private static final Logger log = Logger.getLogger(SimpleLayeredJsonParser.class.getName());

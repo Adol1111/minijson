@@ -47,11 +47,13 @@ import org.minijson.util.CharacterUtil;
 import org.minijson.util.UnicodeUtil;
 
 
-// Recursive descent parser implementation.
-// Note that although it's a "partial" parser,
-//    there is no way to achieve "partial" parsing without scanning the whole json string.
-// parse() returns a nested tree of Map/List down to the maxDepth.
-// Any sub-tree below the maxDepth is just returned as "partial" json string representing that subtree.
+/**
+ * Recursive descent parser implementation.
+ * Note that although it's a "partial" parser,
+ *    there is no way to achieve "partial" parsing without scanning the whole json string.
+ * parse() returns a nested tree of Map/List down to the maxDepth.
+ * Any sub-tree below the maxDepth is just returned as "partial" json string representing that subtree.
+ */
 public abstract class AbstractLayeredJsonParser extends AbstractJsonParser implements LayeredJsonParser
 {
     private static final Logger log = Logger.getLogger(AbstractLayeredJsonParser.class.getName());

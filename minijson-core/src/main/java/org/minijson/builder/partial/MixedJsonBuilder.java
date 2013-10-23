@@ -7,8 +7,12 @@ import org.minijson.builder.JsonBuilder;
 import org.minijson.builder.JsonBuilderException;
 
 
-// TBD: 
-// HybridJsonBuilder ???
+/**
+ * "Partial" JSON String builder.
+ * It builds JSON string down to the given depth.
+ * Any structure below the depth is evaluated as a JSON string.
+ */
+// TBD: Rename it to HybridJsonBuilder ???
 public interface MixedJsonBuilder extends JsonBuilder   // JsonStructureBuilder
 {
     // Any sub-tree structure below depth is ignored. ???? --> Not true..
