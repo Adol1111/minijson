@@ -3,7 +3,9 @@ package org.minijson.parser.exception;
 import org.minijson.parser.core.ErrorContext;
 
 
-
+/**
+ * Indicates an error due to ill-formed JSON string (or, read error), etc.
+ */
 public class UnexpectedEndOfStreamException extends JsonTokenizerException
 {
     private static final long serialVersionUID = 1L;

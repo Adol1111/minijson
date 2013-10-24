@@ -3,6 +3,9 @@ package org.minijson.builder.policy.base;
 import org.minijson.builder.policy.BuilderPolicy;
 
 
+/**
+ * Default implementation of BuilderPolicy.
+ */
 public class DefaultBuilderPolicy extends AbstractBuilderPolicy implements BuilderPolicy
 {
     private static final long serialVersionUID = 1L;

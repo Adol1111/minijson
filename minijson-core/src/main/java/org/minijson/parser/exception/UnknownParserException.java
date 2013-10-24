@@ -4,6 +4,9 @@ import org.minijson.parser.JsonParserException;
 import org.minijson.parser.core.ErrorContext;
 
 
+/**
+ * Indicates parse failure due to an unknown reason.
+ */
 public class UnknownParserException extends JsonParserException
 {
     private static final long serialVersionUID = 1L;

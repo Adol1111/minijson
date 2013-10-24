@@ -3,7 +3,9 @@ package org.minijson.parser.policy.base;
 import org.minijson.parser.policy.ParserPolicy;
 
 
-// Default policies...
+/**
+ * Base implementations of ParserPolicy.
+ */
 public class DefaultParserPolicy extends AbstractParserPolicy implements ParserPolicy
 {
     private static final long serialVersionUID = 1L;

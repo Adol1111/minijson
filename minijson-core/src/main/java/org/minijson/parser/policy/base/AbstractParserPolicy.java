@@ -5,12 +5,15 @@ import java.io.Serializable;
 import org.minijson.parser.policy.ParserPolicy;
 
 
-// Note that we currently support only
-//    allowNonObjectOrNonArray, allowTrailingComma, allowExtraCommas, and caseInsensitiveLiterals.
+/**
+ * Base implementation for ParserPolicy.
+ */
 public abstract class AbstractParserPolicy implements ParserPolicy, Serializable
 {
     private static final long serialVersionUID = 1L;
 
+    // Note that we currently support only
+    //  allowNonObjectOrNonArray, allowTrailingComma, allowExtraCommas, and caseInsensitiveLiterals.
     protected boolean strirct;
     protected boolean allowNonObjectOrNonArray;
     protected boolean allowLeadingJsonMarker;

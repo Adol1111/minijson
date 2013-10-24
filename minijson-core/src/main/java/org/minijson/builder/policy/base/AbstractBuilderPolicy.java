@@ -5,6 +5,9 @@ import java.io.Serializable;
 import org.minijson.builder.policy.BuilderPolicy;
 
 
+/**
+ * Base implementation for BuilderPolicy.
+ */
 public abstract class AbstractBuilderPolicy implements BuilderPolicy, Serializable
 {
     private static final long serialVersionUID = 1L;

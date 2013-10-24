@@ -4,6 +4,9 @@ import org.minijson.parser.JsonParserException;
 import org.minijson.parser.core.ErrorContext;
 
 
+/**
+ * Indicates invalid/unexpected token during parsing.
+ */
 public class InvalidJsonTokenException extends JsonParserException
 {
     private static final long serialVersionUID = 1L;

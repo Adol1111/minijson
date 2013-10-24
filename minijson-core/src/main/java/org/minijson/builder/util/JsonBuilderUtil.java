@@ -1,6 +1,7 @@
 package org.minijson.builder.util;
 
 
+// Place holder, for now.
 public final class JsonBuilderUtil
 {
     // Static methods only.

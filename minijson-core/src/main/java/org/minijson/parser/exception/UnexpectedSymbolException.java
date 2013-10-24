@@ -3,7 +3,9 @@ package org.minijson.parser.exception;
 import org.minijson.parser.core.ErrorContext;
 
 
-
+/**
+ * Indicates invalid/unexpected symbol during parsing.
+ */
 public class UnexpectedSymbolException extends JsonTokenizerException
 {
     private static final long serialVersionUID = 1L;
