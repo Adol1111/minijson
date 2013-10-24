@@ -54,7 +54,7 @@ On the other hand,
 API
 ---
 
-#### High Level API
+#### High Level APIs
 
 At the highest/simplest level, simple wrapper classes,
 `MiniJsonParser` and `MiniJsonBuilder`, can be used to parse/build JSON.
@@ -67,10 +67,27 @@ At the highest/simplest level, simple wrapper classes,
     Object obj = ...;
     String json = miniBuilder.build(obj, 4);
 
+Alternatively, high-level JSON Object/Array wrappers, 
+`MiniJsonObject` and `MiniJsonArray`, can be used to parse/build JSON.
 
-#### "Partial" Parser/Builder API.
+    Map<String,Object> obj1 = ...;
+    JsonObject miniObject1 = new MiniJsonObject(obj1);
+    String json1 = miniObject1.toJsonString();
+
+    String json2 = ...;
+    JsonObject miniObject2 = new MiniJsonObject(obj2);
+    Object obj2 = miniObject2.toJsonStructure();
+
+
+#### Full Parser/Builder APIs
 
 (TBD)
+
+
+#### "Partial" Parser/Builder APIs
+
+(TBD)
+
 
 
 Please refer to [the online API Docs](http://www.minijson.org/repo/apidocs/) for more information.
