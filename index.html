@@ -58,6 +58,12 @@
             </ul>
           </p>
 
+          <h3>API Design</h3>
+          <p>
+             <code>MiniJSON</code> provides simple and yet flexible APIs. 
+             It's easy to use the library in your apps thanks to this fliexible APIs.
+              Please refer to the API docs for more information.
+          </p>
 
         </div>
         <div class="col-lg-6">
@@ -65,15 +71,38 @@
           <h3>Usage</h3>
           <p>
             If you use Maven, you can build and (locally) install the <code>MiniJSON</code> library using standard Maven goals. 
-            If you don't use Maven, then there is an ant script under <em>nomaven/scripts</em>.
+            Or, you can specify the Maven project dependency as follows:
+          </p>
+          
+          <code>
+          <pre>
+<dependency>
+  <groupId>org.aerysoft.minijson</groupId>
+  <artifactId>minijson-core</artifactId>
+  <version>0.9.1</version>
+</dependency>
+          </pre>
+          </code>
+
+          <h3>Sample Code</h3>
+          <p>
+             <code>MiniJSON</code> provides many "advanced" and flexible sets of APIs,
+             including "partial" JSON parsing and building.
+             It also provides more conventional APIs which are generally found in other JSON libraries.
+             For example, you can to the following using "mini" wrapper classes:
           </p>
 
-          <h3>API Design</h3>
-          <p>
-             <code>MiniJSON</code> provides simple and yet flexible APIs. 
-             It's easy to use the library in your apps thanks to this fliexible APIs.
-            Please refer to the API docs for more information.
-          </p>
+          <code>
+          <pre>
+JsonParser miniParser = new MiniJsonParser();
+String json = "{\"a\":\"b\"}";
+Object obj = miniParser.parse(json);
+
+JsonBuilder miniBuilder = new MiniJsonBuilder();
+Object obj = ...;
+String json = miniBuilder.build(obj, 4);
+          </pre>
+          </code>
 
         </div>
 
