@@ -42,6 +42,15 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
+          <h3>New Kind of JSON Library</h3>
+          <p>
+             <code>MiniJSON</code> was created because I needed a "minimal" JSON builder/parser
+             that did not carry the whole baggage of object mapping/data binding, etc.
+             Eventually, the library grew, and it now includes many different "API sets"
+             (mostly, for ease of use), which you cannot find in any other JSON libraries.
+             Please give it a try and find out for yourself how much more you can do with new JSON APIs.
+          </p>
+
           <h3>Goals</h3>
           <p>
             <ol>
@@ -74,7 +83,6 @@
             Or, you can specify the Maven project dependency as follows:
           </p>
           
-          <code>
           <pre>
 <dependency>
   <groupId>org.aerysoft.minijson</groupId>
@@ -82,26 +90,23 @@
   <version>0.9.1</version>
 </dependency>
           </pre>
-          </code>
 
           <h3>Sample Code</h3>
           <p>
              <code>MiniJSON</code> provides many "advanced" and flexible sets of APIs,
              including "partial" JSON parsing and building.
              It also provides more conventional APIs which are generally found in other JSON libraries.
-             For example, you can to the following using "mini" wrapper classes:
+             For example, you can to the following using the "mini" wrapper classes:
           </p>
 
           <code>
-          <pre>
-JsonParser miniParser = new MiniJsonParser();
+JsonParser parser = new MiniJsonParser();
 String json = "{\"a\":\"b\"}";
-Object obj = miniParser.parse(json);
+Object obj = parser.parse(json);
 
-JsonBuilder miniBuilder = new MiniJsonBuilder();
+JsonBuilder builder = new MiniJsonBuilder();
 Object obj = ...;
-String json = miniBuilder.build(obj, 4);
-          </pre>
+String json = builder.build(obj, 4);
           </code>
 
         </div>
