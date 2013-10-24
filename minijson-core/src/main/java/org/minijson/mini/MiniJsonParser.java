@@ -19,14 +19,12 @@ import org.minijson.parser.impl.SimpleJsonParser;
  * The primary purpose of this class is to "minimize" the interface of the real implementation.
  * 
  * Usage:
- * <pre>
  * {@Code
  * try {
  *     Object obj = MiniJsonParser.parse(jsonStr);
  * } catch (JsonParserException e) {
  * }
  * }
- * </pre>
  *
  */
 // This is kind of an "immutable" wrapper around SimpleJsonParser or other JsonParser.

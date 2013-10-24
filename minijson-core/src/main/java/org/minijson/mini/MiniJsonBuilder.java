@@ -15,11 +15,9 @@ import org.minijson.builder.impl.SimpleJsonBuilder;
  * The primary purpose of this class is to "minimize" the interface of the real implementation.
  * 
  * Usage:
- * <pre>
  * {@Code
  * String jsonStr = MiniJsonBuilder.build(object);
  * }
- * </pre>
  *
  */
 // This is kind of an "immutable" wrapper around SimpleJsonBuilder or other BareJsonBuilder.
