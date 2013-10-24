@@ -29,7 +29,25 @@ Otherwise, you can add, in your project, the following dependency:
 High Level API Design
 ---
 
-(TBD)
+`MiniJSON` provides the basic JSON API for _parse()_ and _build()_.
+In addition, `MiniJSON` provides two different sets of APIs, which differentiate itself from other JSON libraries.
+
+
+#### Configurable parsing/building
+
+`MiniJSON` includes certain Builder (JSON generator) and Parser classes which take "policy" objects as inputs.
+These policy objects can be used to customize the parsing/building of JSON.
+
+
+#### "Partial" parsing/building
+
+This is rather unique to `MiniJSON`.
+All JSON parsers and JSON generators/builders implement parsing/building as all or none operations.
+Given a JSON string, a parser creates an object corresponding to the JSON string.
+Given an object, a builder generates a JSON string representation of the object.
+
+On the other hande, 
+`MiniJSON` includes API which can do "partial parsing" or "partial building".
 
 
 
