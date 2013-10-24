@@ -29,32 +29,51 @@ Otherwise, you can add, in your project, the following dependency:
 High Level API Design
 ---
 
-`MiniJSON` provides the basic JSON API for _parse()_ and _build()_.
-In addition, `MiniJSON` provides two different sets of APIs, which differentiate itself from other JSON libraries.
+`MiniJSON` provides the basic JSON APIs for _parse()_ and _build()_.
+In addition, `MiniJSON` provides two extra sets of APIs, which differentiate itself from other JSON libraries.
 
 
-#### Configurable parsing/building
+#### Configurable Parsing/Building
 
 `MiniJSON` includes certain Builder (JSON generator) and Parser classes which take "policy" objects as inputs.
-These policy objects can be used to customize the parsing/building of JSON.
+These policy objects can be used to customize the parsing/building operations.
 
 
-#### "Partial" parsing/building
+#### "Partial" Parsing/Building
 
 This is rather unique to `MiniJSON`.
-All JSON parsers and JSON generators/builders implement parsing/building as all or none operations.
+All JSON parsers and JSON generators/builders implement parsing/building as all-or-none operations.
 Given a JSON string, a parser creates an object corresponding to the JSON string.
 Given an object, a builder generates a JSON string representation of the object.
 
-On the other hande, 
-`MiniJSON` includes API which can do "partial parsing" or "partial building".
+On the other hand, 
+`MiniJSON` includes APIs which can do "partial parsing" or "partial building".
 
 
 
 API
 ---
 
-Please refer to [the online API Docs](http://www.minijson.org/repo/apidocs/).
+#### High Level API
+
+At the highest/simplest level, simple wrapper classes,
+`MiniJsonParser` and `MiniJsonBuilder`, can be used to parse/build JSON.
+
+    JsonParser miniParser = new MiniJsonParser();
+    String json = "{\"a\":\"b\"}";
+    Object obj = miniParser.parse(json);
+
+    JsonBuilder miniBuilder = new MiniJsonBuilder();
+    Object obj = ...;
+    String json = miniBuilder.build(obj, 4);
+
+
+#### "Partial" Parser/Builder API.
+
+(TBD)
+
+
+Please refer to [the online API Docs](http://www.minijson.org/repo/apidocs/) for more information.
 
 <!--
 Please refer to [the Project wiki pages](https://github.com/harrywye/minijson/wiki/_pages) 
