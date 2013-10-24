@@ -75,7 +75,7 @@ Alternatively, high-level JSON Object/Array wrappers,
     String json1 = miniObject1.toJsonString();
 
     String json2 = ...;
-    JsonObject miniObject2 = new MiniJsonObject(obj2);
+    JsonObject miniObject2 = new MiniJsonObject(json2);
     Object obj2 = miniObject2.toJsonStructure();
 
 
