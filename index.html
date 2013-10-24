@@ -42,7 +42,7 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h3>New Kind of JSON Library</h3>
+          <h3>Totally New JSON APIs</h3>
           <p>
              <code>MiniJSON</code> was created because I needed a "minimal" JSON builder/parser
              that did not carry the whole baggage of object mapping/data binding, etc.
@@ -71,7 +71,9 @@
           <p>
              <code>MiniJSON</code> provides simple and yet flexible APIs. 
              It's easy to use the library in your apps thanks to this fliexible APIs.
-              Please refer to the API docs for more information.
+             Furthermore, you'll end up discovering the whole new list of things 
+             you can do with JSON once you start coding with <code>MiniJSON</code> APIs.
+             Please refer to the API docs for more information.
           </p>
 
         </div>
@@ -84,11 +86,11 @@
           </p>
           
           <pre>
-<dependency>
-  <groupId>org.aerysoft.minijson</groupId>
-  <artifactId>minijson-core</artifactId>
-  <version>0.9.1</version>
-</dependency>
+&lt;dependency&gt;
+  &lt;groupId&gt;org.aerysoft.minijson&lt;/groupId&gt;
+  &lt;artifactId&gt;minijson-core&lt;/artifactId&gt;
+  &lt;version&gt;0.9.1&lt;/version&gt;
+&lt;/dependency&gt;
           </pre>
 
           <h3>Sample Code</h3>
@@ -100,6 +102,7 @@
           </p>
 
           <code>
+          <pre>
 JsonParser parser = new MiniJsonParser();
 String json = "{\"a\":\"b\"}";
 Object obj = parser.parse(json);
@@ -107,6 +110,7 @@ Object obj = parser.parse(json);
 JsonBuilder builder = new MiniJsonBuilder();
 Object obj = ...;
 String json = builder.build(obj, 4);
+          </pre>
           </code>
 
         </div>
