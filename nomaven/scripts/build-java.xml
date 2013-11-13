@@ -4,7 +4,7 @@
     <property name="classesDir" value="nomaven/build/classes"/>
     <property name="apidocDir" value="nomaven/build/apidoc"/>
     <property name="output" value="nomaven/build/jar"/>
-    <property name="version" value="0.9.1"/>
+    <property name="version" value="0.9.3"/>
 
 
 	<target name="cleanCoreClasses">
@@ -47,7 +47,7 @@
         <javac srcdir="minijson-core/src/main/java"
                  destdir="${classesDir}/core"
                  debug="on"
-                 source="1.7"
+                 source="1.6"
                  includeantruntime="false"
         />
     </target>
@@ -56,7 +56,7 @@
                  classpath="${classesDir}/core"
                  destdir="${classesDir}/tool"
                  debug="on"
-                 source="1.7"
+                 source="1.6"
                  includeantruntime="false"
         />
     </target>
@@ -65,7 +65,7 @@
                  classpath="${classesDir}/core"
                  destdir="${classesDir}/ext"
                  debug="on"
-                 source="1.7"
+                 source="1.6"
                  includeantruntime="false"
         />
     </target>
