@@ -25,7 +25,7 @@ public class CharacterQueue implements Queue<Character>
     
     public CharacterQueue()
     {
-        queue = new LinkedList<>();
+        queue = new LinkedList<Character>();
     }
 
     
@@ -173,7 +173,7 @@ public class CharacterQueue implements Queue<Character>
         if(buff == null || size < 0) {   // Note: "<"
             return null;
         }
-        List<Character> list = new ArrayList<>(size);
+        List<Character> list = new ArrayList<Character>(size);
         for(int i=0; i<size; i++) {
             list.add(buff[i]);       // auto-boxing.
         }

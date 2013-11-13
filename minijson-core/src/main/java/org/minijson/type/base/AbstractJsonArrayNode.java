@@ -42,7 +42,7 @@ public class AbstractJsonArrayNode extends AbstractJsonStructNode implements Jso
     {
         super();
         if(list == null) {
-            this.list = new ArrayList<>();
+            this.list = new ArrayList<Object>();
         } else {
             this.list = list;
         }
@@ -145,7 +145,7 @@ public class AbstractJsonArrayNode extends AbstractJsonStructNode implements Jso
         // ????
         // return list; 
         
-        List<Object> struct = new ArrayList<>();
+        List<Object> struct = new ArrayList<Object>();
         
         // TBD:
         // Traverse the list down to depth...

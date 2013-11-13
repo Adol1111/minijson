@@ -22,7 +22,7 @@ public class TailArrayQueueTest
     @Test
     public void testOfferE()
     {
-        TailArrayQueue<String> queue = new TailArrayQueue<>(4);
+        TailArrayQueue<String> queue = new TailArrayQueue<String>(4);
         System.out.println("queue = " + queue);
         
         queue.offer("a");

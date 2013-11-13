@@ -30,14 +30,14 @@ public class MiniJsonBuilderTest
     @Test
     public void testBuild1()
     {
-        Map<String,Object> map = new HashMap<>();
-        List<Object> list1 = new ArrayList<>();
+        Map<String,Object> map = new HashMap<String,Object>();
+        List<Object> list1 = new ArrayList<Object>();
         list1.add("x");
         list1.add("y");
         list1.add("z");
         map.put("a", list1);
         map.put("b", false);
-        Map<String,Object> map2 = new HashMap<>();
+        Map<String,Object> map2 = new HashMap<String,Object>();
         map2.put("p", 100);
         map2.put("q", null);
         map2.put("r", 200);
@@ -56,7 +56,7 @@ public class MiniJsonBuilderTest
     @Test
     public void testBuild2()
     {
-        List<Object> list = new ArrayList<>();
+        List<Object> list = new ArrayList<Object>();
         list.add("a");
         
         Object obj = list;

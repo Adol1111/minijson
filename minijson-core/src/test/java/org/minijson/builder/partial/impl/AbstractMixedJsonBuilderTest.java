@@ -63,9 +63,9 @@ public class AbstractMixedJsonBuilderTest
                 "}";
         
         
-        jsonObj = new HashMap<>();
+        jsonObj = new HashMap<String,Object>();
         jsonObj.put("key 1", jsonString1);
-        Map<String,Object> map1 = new HashMap<>();
+        Map<String,Object> map1 = new HashMap<String,Object>();
         map1.put("level 2", jsonString2);
         jsonObj.put("key 2", map1);
         

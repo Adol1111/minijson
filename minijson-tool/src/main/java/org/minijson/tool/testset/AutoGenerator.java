@@ -38,9 +38,9 @@ public class AutoGenerator implements Generator
         // re-process the data first
         
         int size = jsonTestSetSpec.specSize();
-        List<JsonTestDataSpec> specs = new ArrayList<>();
-        List<Double> weights = new ArrayList<>();
-        List<Double> cumulWeights = new ArrayList<>();
+        List<JsonTestDataSpec> specs = new ArrayList<JsonTestDataSpec>();
+        List<Double> weights = new ArrayList<Double>();
+        List<Double> cumulWeights = new ArrayList<Double>();
         
         double cumulWeight = 0.0;
         double totalWeight = 0.0;
@@ -61,7 +61,7 @@ public class AutoGenerator implements Generator
         // Json serializer.
         IndentedJsonBuilder jsonBuilder = new MiniJsonBuilder();
         
-        List<String> jsonStrList = new ArrayList<>();
+        List<String> jsonStrList = new ArrayList<String>();
         int count = jsonTestSetSpec.getCount();
         for(int c=0; c<count; c++) {
             

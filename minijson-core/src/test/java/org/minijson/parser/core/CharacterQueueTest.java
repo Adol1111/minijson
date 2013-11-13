@@ -89,7 +89,7 @@ public class CharacterQueueTest
         int size1 = characterQueue.size();
         System.out.println("size1 = " + size1);
 
-        List<Character> buff = new ArrayList<>(Arrays.asList(new Character[]{'a', 'b', 'c'}));
+        List<Character> buff = new ArrayList<Character>(Arrays.asList(new Character[]{'a', 'b', 'c'}));
         characterQueue.addAll(buff);
         System.out.println("characterQueue = " + characterQueue);
 

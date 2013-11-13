@@ -38,8 +38,8 @@ public class JsonCompatibleRunner
     
     public void runBuild()
     {
-        Map<String,Object> map = new LinkedHashMap<>();
-        List<Object> list1 = new ArrayList<>();
+        Map<String,Object> map = new LinkedHashMap<String,Object>();
+        List<Object> list1 = new ArrayList<Object>();
         list1.add("x");
         list1.add("y\ny\ty\ry\\y ___ \\/ / ___ </ ___ y/y\"\u0033\u0035y\u001ay");
         list1.add("z");
@@ -50,7 +50,7 @@ public class JsonCompatibleRunner
         SampleJsonCompatibleArray jb2 = new SampleJsonCompatibleArray();
         map.put("a3", jb2);
         map.put("b", false);
-        Map<String,Object> map2 = new LinkedHashMap<>();
+        Map<String,Object> map2 = new LinkedHashMap<String,Object>();
         map2.put("p", 100);
         map2.put("q", null);
         map2.put("r", 200);
@@ -64,13 +64,13 @@ public class JsonCompatibleRunner
 
         SampleBean bean1 = new SampleBean(3, "aaaa");
         bean1.setAttrF(new char[]{'h','i'});
-        Map<String,Object> mapC1 = new LinkedHashMap<>();
+        Map<String,Object> mapC1 = new LinkedHashMap<String,Object>();
         mapC1.put("ii", 33);
         SampleBean beanC1 = new SampleBean(4, "bbbb");
         SampleBean beanC2 = new SampleBean(5, "cccc");
         mapC1.put("ii22", new Object[]{1,2,3, beanC2});
         SampleBean beanD3 = new SampleBean(6, "dddd");
-        List<Object> listD3 = new ArrayList<>(Arrays.asList(new Object[]{1,2,3, beanD3}));
+        List<Object> listD3 = new ArrayList<Object>(Arrays.asList(new Object[]{1,2,3, beanD3}));
         beanC2.setAttrD(listD3);
         beanC1.setAttrE(beanC2);
         beanC1.setAttrF(new char[]{'k','q','p'});

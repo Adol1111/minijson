@@ -83,7 +83,7 @@ public final class Symbols
     // For easy access
     private static final Set<Character> symbolSet;
     static {
-        symbolSet = new HashSet<>();
+        symbolSet = new HashSet<Character>();
         symbolSet.add(COMMA);
         symbolSet.add(COLON);
         symbolSet.add(LSQUARE);
@@ -97,7 +97,7 @@ public final class Symbols
 
     private static final Set<Character> escapables;
     static {
-        escapables = new HashSet<>();
+        escapables = new HashSet<Character>();
         escapables.add(DQUOTE);
         escapables.add(BACKSLASH);
         escapables.add(SLASH);
@@ -124,7 +124,7 @@ public final class Symbols
 
     private static final Set<Character> escaped;
     static {
-        escaped = new HashSet<>();
+        escaped = new HashSet<Character>();
         escaped.add(ESCAPED_DQUOTE);
         escaped.add(ESCAPED_BACKSLASH);
         // ???

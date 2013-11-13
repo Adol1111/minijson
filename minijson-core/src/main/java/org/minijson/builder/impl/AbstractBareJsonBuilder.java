@@ -234,7 +234,7 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
                 }
             } else {
                 if(obj instanceof Map<?,?>) {
-                    Map<String,Object> jsonMap = new LinkedHashMap<>();
+                    Map<String,Object> jsonMap = new LinkedHashMap<String,Object>();
     
                     Map<String,Object> map = null;
                     try {
@@ -259,7 +259,7 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
                     
                     jsonStruct = jsonMap;
                 } else if(obj instanceof List<?>) {
-                    List<Object> jsonList = new ArrayList<>();
+                    List<Object> jsonList = new ArrayList<Object>();
     
                     List<Object> list = null;
                     try {
@@ -283,7 +283,7 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
                     
                     jsonStruct = jsonList;
                 } else if(obj.getClass().isArray()) {          // ???
-                    List<Object> jsonList = new ArrayList<>();
+                    List<Object> jsonList = new ArrayList<Object>();
                     
 //                    Object[] array = null;
 //                    try {
@@ -324,7 +324,7 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
     
                     jsonStruct = jsonList;
                 } else if(obj instanceof Collection<?>) {
-                    List<Object> jsonList = new ArrayList<>();
+                    List<Object> jsonList = new ArrayList<Object>();
                     // jsonList.addAll((Collection<Object>) ((Collection<?>) obj));
 
                     Iterator<Object> it = ((Collection<Object>) ((Collection<?>) obj)).iterator();
@@ -372,10 +372,11 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
                                     // Because we are just converting a bean to a map,
                                     // the depth param is not used. (or, depth == 1).
                                     mapEquivalent = BeanIntrospectionUtil.introspect(obj);
-                                } catch (IllegalAccessException
-                                        | IllegalArgumentException
-                                        | InvocationTargetException
-                                        | IntrospectionException e) {
+                                // } catch (IllegalAccessException
+                                //         | IllegalArgumentException
+                                //         | InvocationTargetException
+                                //         | IntrospectionException e) {
+                                } catch (Exception e) {
                                     // Ignore.
                                     if(log.isLoggable(Level.INFO)) log.log(Level.INFO, "Faild to introspect a bean.", e);
                                 }
@@ -1048,10 +1049,11 @@ public abstract class AbstractBareJsonBuilder implements BareJsonBuilder
                                         // Because we are just converting a bean to a map,
                                         // the depth param is not used. (or, depth == 1).
                                         mapEquivalent = BeanIntrospectionUtil.introspect(obj);
-                                    } catch (IllegalAccessException
-                                            | IllegalArgumentException
-                                            | InvocationTargetException
-                                            | IntrospectionException e) {
+                                    // } catch (IllegalAccessException
+                                    //         | IllegalArgumentException
+                                    //         | InvocationTargetException
+                                    //         | IntrospectionException e) {
+                                    } catch (Exception e) {
                                         // Ignore.
                                         if(log.isLoggable(Level.INFO)) log.log(Level.INFO, "Faild to introspect a bean.", e);
                                     }

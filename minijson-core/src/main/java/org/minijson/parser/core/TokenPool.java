@@ -65,7 +65,7 @@ public final class TokenPool
     private final Map<Integer, JsonToken> tokenPool; 
     private TokenPool()
     {
-        tokenPool = new HashMap<>();
+        tokenPool = new HashMap<Integer, JsonToken>();
         tokenPool.put(TOKEN_EOF.hashCode(), TOKEN_EOF);
         tokenPool.put(TOKEN_NULL.hashCode(), TOKEN_NULL);
         tokenPool.put(TOKEN_COMMA.hashCode(), TOKEN_COMMA);

@@ -85,7 +85,8 @@ public class AbstractLayeredJsonParserTest
                 // For printing...
                 jsonStr = jsonBuilder.build(obj, 4);
                 System.out.println("jsonStr = " + jsonStr);
-            } catch (JsonParserException | JsonBuilderException e) {
+            // } catch (JsonParserException | JsonBuilderException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -109,7 +110,8 @@ public class AbstractLayeredJsonParserTest
             Object obj3 = jsonParser.parse(jsonStr3);
             String objStr3 = jsonBuilder.build(obj3, 4);
             System.out.println("objStr3 = " + objStr3);
-        } catch (JsonParserException | JsonBuilderException e) {
+        // } catch (JsonParserException | JsonBuilderException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

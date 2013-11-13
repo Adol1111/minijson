@@ -226,7 +226,7 @@ public abstract class AbstractRichJsonParser extends AbstractJsonParser implemen
             throw new InvalidJsonTokenException("JSON object should start with {.", tailCharStream(tokenizer), peekCharStream(tokenizer));
         }
 
-        Map<String,Object> map = new HashMap<>();
+        Map<String,Object> map = new HashMap<String,Object>();
         int type = peekAndGetType(tokenizer);
         if(type == RCURLY) {
             // empty object
@@ -250,7 +250,7 @@ public abstract class AbstractRichJsonParser extends AbstractJsonParser implemen
 
     private Map<String,JsonNode> produceJsonObjectMembers(JsonTokenizer tokenizer) throws JsonParserException
     {
-        Map<String,JsonNode> members = new HashMap<>();
+        Map<String,JsonNode> members = new HashMap<String,JsonNode>();
         
         int type = peekAndGetType(tokenizer);
         while(type != RCURLY) {
@@ -370,7 +370,7 @@ public abstract class AbstractRichJsonParser extends AbstractJsonParser implemen
 
     private List<JsonNode> produceJsonArrayElements(JsonTokenizer tokenizer) throws JsonParserException
     {
-        List<JsonNode> elements = new ArrayList<>();
+        List<JsonNode> elements = new ArrayList<JsonNode>();
 
         int type = peekAndGetType(tokenizer);
         while(type != RSQUARE) {

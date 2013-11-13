@@ -38,7 +38,7 @@ public final class JsonTestSetSpec implements Serializable
         super();
         this.count = count;
         if(dataSpecs == null) {
-            this.dataSpecs = new LinkedHashMap<>();   // Preserving order, for convenience.
+            this.dataSpecs = new LinkedHashMap<JsonTestDataSpec, Double>();   // Preserving order, for convenience.
         } else {
             this.dataSpecs = dataSpecs;
         }

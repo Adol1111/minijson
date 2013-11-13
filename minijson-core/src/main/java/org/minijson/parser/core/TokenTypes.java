@@ -30,7 +30,7 @@ public final class TokenTypes
     // For easy access
     private static final Set<Integer> typeSet;
     static {
-        typeSet = new HashSet<>();
+        typeSet = new HashSet<Integer>();
         typeSet.add(EOF);
         typeSet.add(NULL);
         typeSet.add(COMMA);

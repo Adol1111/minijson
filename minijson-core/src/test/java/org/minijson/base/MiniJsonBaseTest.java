@@ -28,14 +28,14 @@ public class MiniJsonBaseTest
         @Override
         protected void init()
         {
-            map = new HashMap<>();
-            List<Object> list1 = new ArrayList<>();
+            map = new HashMap<String,Object>();
+            List<Object> list1 = new ArrayList<Object>();
             list1.add("x");
             list1.add("y");
             list1.add("z");
             map.put("a", list1);
             map.put("b", false);
-            Map<String,Object> map2 = new HashMap<>();
+            Map<String,Object> map2 = new HashMap<String,Object>();
             map2.put("p", 100);
             map2.put("q", null);
             map2.put("r", 200);
@@ -70,14 +70,14 @@ public class MiniJsonBaseTest
             @Override
             protected void init()
             {
-                map = new HashMap<>();
-                List<Object> list1 = new ArrayList<>();
+                map = new HashMap<String,Object>();
+                List<Object> list1 = new ArrayList<Object>();
                 list1.add("x");
                 list1.add("y");
                 list1.add("z");
                 map.put("a", list1);
                 map.put("b", false);
-                Map<String,Object> map2 = new HashMap<>();
+                Map<String,Object> map2 = new HashMap<String,Object>();
                 map2.put("p", 100);
                 map2.put("q", null);
                 map2.put("r", 200);
@@ -113,14 +113,14 @@ public class MiniJsonBaseTest
             @Override
             protected void init()
             {
-                map = new HashMap<>();
-                List<Object> list1 = new ArrayList<>();
+                map = new HashMap<String,Object>();
+                List<Object> list1 = new ArrayList<Object>();
                 list1.add("x");
                 list1.add("y");
                 list1.add("z");
                 map.put("a", list1);
                 map.put("b", false);
-                Map<String,Object> map2 = new HashMap<>();
+                Map<String,Object> map2 = new HashMap<String,Object>();
                 map2.put("p", 100);
                 map2.put("q", null);
                 map2.put("r", 200);

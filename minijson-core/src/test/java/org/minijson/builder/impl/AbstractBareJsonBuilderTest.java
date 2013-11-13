@@ -44,14 +44,14 @@ public class AbstractBareJsonBuilderTest
     @Test
     public void testBuild1()
     {
-        Map<String,Object> map = new LinkedHashMap<>();
-        List<Object> list1 = new ArrayList<>();
+        Map<String,Object> map = new LinkedHashMap<String,Object>();
+        List<Object> list1 = new ArrayList<Object>();
         list1.add("x");
         list1.add("y");
         list1.add("z");
         map.put("a", list1);
         map.put("b", false);
-        Map<String,Object> map2 = new LinkedHashMap<>();
+        Map<String,Object> map2 = new LinkedHashMap<String,Object>();
         map2.put("p", 100);
         map2.put("q", null);
         map2.put("r", 200);
@@ -71,7 +71,7 @@ public class AbstractBareJsonBuilderTest
     @Test
     public void testBuild2()
     {
-        List<Object> list = new ArrayList<>();
+        List<Object> list = new ArrayList<Object>();
         list.add("a");
         
         Object obj = list;
@@ -109,8 +109,8 @@ public class AbstractBareJsonBuilderTest
     @Test
     public void testToJsonStructure()
     {
-        Map<String,Object> map = new LinkedHashMap<>();
-        List<Object> list1 = new ArrayList<>();
+        Map<String,Object> map = new LinkedHashMap<String,Object>();
+        List<Object> list1 = new ArrayList<Object>();
         list1.add("x");
         list1.add("y\ny\ty\ry\\y ___ \\/ / ___ </ ___ y/y\"\u0033\u0035y\u001ay");
         list1.add("z");
@@ -121,7 +121,7 @@ public class AbstractBareJsonBuilderTest
         TestJsonCompatibleArray jb2 = new TestJsonCompatibleArray();
         map.put("a3", jb2);
         map.put("b", false);
-        Map<String,Object> map2 = new LinkedHashMap<>();
+        Map<String,Object> map2 = new LinkedHashMap<String,Object>();
         map2.put("p", 100);
         map2.put("q", null);
         map2.put("r", 200);
@@ -135,13 +135,13 @@ public class AbstractBareJsonBuilderTest
 
         TestBean bean1 = new TestBean(3, "aaaa");
         bean1.setAttrF(new char[]{'h','i'});
-        Map<String,Object> mapC1 = new LinkedHashMap<>();
+        Map<String,Object> mapC1 = new LinkedHashMap<String,Object>();
         mapC1.put("ii", 33);
         TestBean beanC1 = new TestBean(4, "bbbb");
         TestBean beanC2 = new TestBean(5, "cccc");
         mapC1.put("ii22", new Object[]{1,2,3, beanC2});
         TestBean beanD3 = new TestBean(6, "dddd");
-        List<Object> listD3 = new ArrayList<>(Arrays.asList(new Object[]{1,2,3, beanD3}));
+        List<Object> listD3 = new ArrayList<Object>(Arrays.asList(new Object[]{1,2,3, beanD3}));
         beanC2.setAttrD(listD3);
         beanC1.setAttrE(beanC2);
         beanC1.setAttrF(new char[]{'k','q','p'});

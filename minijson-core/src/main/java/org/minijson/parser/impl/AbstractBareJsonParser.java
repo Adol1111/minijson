@@ -275,7 +275,7 @@ public abstract class AbstractBareJsonParser extends AbstractJsonParser implemen
             throw new InvalidJsonTokenException("JSON object should start with {. " + tokenTailBuffer.toTraceString(), tailCharStream(tokenizer), peekCharStream(tokenizer));
         }
 
-        Map<String,Object> map = new HashMap<>();
+        Map<String,Object> map = new HashMap<String,Object>();
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         if(type == RCURLY) {
             // empty object
@@ -314,7 +314,7 @@ public abstract class AbstractBareJsonParser extends AbstractJsonParser implemen
  
     private Map<String,Object> produceJsonObjectMembers(JsonTokenizer tokenizer, JsonTokenBuffer tokenTailBuffer, JsonNodeBuffer nodeTailBuffer) throws JsonParserException
     {
-        Map<String,Object> members = new HashMap<>();
+        Map<String,Object> members = new HashMap<String,Object>();
         
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         while(type != RCURLY) {
@@ -458,7 +458,7 @@ public abstract class AbstractBareJsonParser extends AbstractJsonParser implemen
 
     private List<Object> produceJsonArrayElements(JsonTokenizer tokenizer, JsonTokenBuffer tokenTailBuffer, JsonNodeBuffer nodeTailBuffer) throws JsonParserException
     {
-        List<Object> elements = new ArrayList<>();
+        List<Object> elements = new ArrayList<Object>();
 
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         while(type != RSQUARE) {

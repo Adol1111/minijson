@@ -596,10 +596,11 @@ public abstract class AbstractMixedJsonBuilder implements MixedJsonBuilder
                                         // Because we are just converting a bean to a map,
                                         // the depth param is not used. (or, depth == 1).
                                         mapEquivalent = BeanIntrospectionUtil.introspect(obj);
-                                    } catch (IllegalAccessException
-                                            | IllegalArgumentException
-                                            | InvocationTargetException
-                                            | IntrospectionException e) {
+                                    // } catch (IllegalAccessException
+                                    //         | IllegalArgumentException
+                                    //         | InvocationTargetException
+                                    //         | IntrospectionException e) {
+                                    } catch (Exception e) {
                                         // Ignore.
                                         if(log.isLoggable(Level.INFO)) log.log(Level.INFO, "Faild to introspect a bean.", e);
                                     }

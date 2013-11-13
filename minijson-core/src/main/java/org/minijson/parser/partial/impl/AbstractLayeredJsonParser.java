@@ -332,7 +332,7 @@ public abstract class AbstractLayeredJsonParser extends AbstractJsonParser imple
             throw new InvalidJsonTokenException("JSON object should start with {. " + tokenTailBuffer.toTraceString(), tailCharStream(tokenizer), peekCharStream(tokenizer));
         }
 
-        Map<String,Object> map = new HashMap<>();
+        Map<String,Object> map = new HashMap<String,Object>();
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         if(type == RCURLY) {
             // empty object
@@ -371,7 +371,7 @@ public abstract class AbstractLayeredJsonParser extends AbstractJsonParser imple
  
     private Map<String,Object> produceJsonObjectMembers(JsonTokenizer tokenizer, int depth, JsonTokenBuffer tokenTailBuffer, JsonNodeBuffer nodeTailBuffer) throws JsonParserException, IOException
     {
-        Map<String,Object> members = new HashMap<>();        
+        Map<String,Object> members = new HashMap<String,Object>();        
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         while(type != RCURLY) {
             Map.Entry<String,Object> member = produceJsonObjectMember(tokenizer, depth, tokenTailBuffer, nodeTailBuffer);     // No depth change...
@@ -534,7 +534,7 @@ public abstract class AbstractLayeredJsonParser extends AbstractJsonParser imple
 
     private List<Object> produceJsonArrayElements(JsonTokenizer tokenizer, int depth, JsonTokenBuffer tokenTailBuffer, JsonNodeBuffer nodeTailBuffer) throws JsonParserException, IOException
     {
-        List<Object> elements = new ArrayList<>();
+        List<Object> elements = new ArrayList<Object>();
         int type = peekAndGetType(tokenizer, tokenTailBuffer, nodeTailBuffer);
         while(type != RSQUARE) {
             Object element = produceJsonArrayElement(tokenizer, depth, tokenTailBuffer, nodeTailBuffer);      // No depth change...

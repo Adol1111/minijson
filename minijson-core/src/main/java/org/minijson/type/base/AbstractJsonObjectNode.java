@@ -44,7 +44,7 @@ public class AbstractJsonObjectNode extends AbstractJsonStructNode implements Js
     public AbstractJsonObjectNode(Map<String,Object> map)
     {
         if(map == null) {
-            this.map = new HashMap<>();
+            this.map = new HashMap<String,Object>();
         } else {
             this.map = map;
         }
@@ -150,7 +150,7 @@ public class AbstractJsonObjectNode extends AbstractJsonStructNode implements Js
         // ????
         // return map;
 
-        Map<String,Object> struct = new LinkedHashMap<>();
+        Map<String,Object> struct = new LinkedHashMap<String,Object>();
         
         // TBD:
         // Traverse the map down to depth...

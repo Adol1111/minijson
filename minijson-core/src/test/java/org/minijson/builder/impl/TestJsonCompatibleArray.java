@@ -31,18 +31,18 @@ public class TestJsonCompatibleArray implements JsonCompatible
     @Override
     public Object toJsonStructure(int depth) throws JsonBuilderException
     {
-        List<Object> list = new ArrayList<>();
-        Map<String,Object> map = new LinkedHashMap<>();
+        List<Object> list = new ArrayList<Object>();
+        Map<String,Object> map = new LinkedHashMap<String,Object>();
         if(depth > 0) {
             list.add(map);
             if(depth > 1) {
                 map.put("k1", "v1");
                 if(depth > 2) {
-                    Map<String,Object> map2 = new LinkedHashMap<>();
+                    Map<String,Object> map2 = new LinkedHashMap<String,Object>();
                     map2.put("x1", "y1");
                     map.put("k2", map2);
                     if(depth > 3) {
-                        Map<String,Object> map3 = new LinkedHashMap<>();
+                        Map<String,Object> map3 = new LinkedHashMap<String,Object>();
                         map3.put("m1", "n1");
                         map2.put("x2", map3);
                     }
