@@ -4,13 +4,15 @@ MiniJSON for Java
 A minimal JSON builder - parser in Java.
 
 
-Note (April 2nd, 2015)
+Note (April 3rd, 2015)
 ---
 
-_I started this project with many ideas. Although it was meant to be "minimal", the library included many novel and interesting features that were not generally found in other JSON libraries. This project is still work in progress. Due to personal reasons, however, I've been using C# (not Java) as my primary coding language these days, and it's rather unlikely that I'll "finish" this project any time soon. One good thing about open source projects like this is that if anybody wants it, they have full access to the source code. I appreciate your interests in this project, and I apoplogize for "not finishing" it. I hope the cosebase in this repo can be a basis for your own parser/serialzier for JSON. (Note that "partial" parsing/building, for instance, can be rather useful in many use cases.) Meanwhile, I've just started a new project to "port" the MiniJSON library to the C# programming language, if anybody's interested. You can find the project in CodePlex:_
+_I started this project with many ideas. Although it was meant to be "minimal", the library included many novel and interesting features that were not generally found in other JSON libraries. This project is still work in progress. Due to personal reasons, however, I've been using C# (not Java) as my primary coding language these days, and it's rather unlikely that I'll "finish" this project any time soon. One good thing about open source projects like this is that if anybody wants it, they have full access to the source code. I appreciate your interests in this project, and I apologize for "not finishing" it. I hope the cosebase in this repo can be a basis for your own parser/serializer for JSON. (Note that "partial" parsing/building, for instance, can be rather useful in many use cases once you realize what it does.) Meanwhile, I've just started a new project to "port" the MiniJSON library to the C# programming language, if anybody's interested. You can find the project in CodePlex:_
 
 * [Holo JSON Parser and Serializer in C#](http://holojson.codeplex.com/)
 
+
+---
 
 
 Synopsis
